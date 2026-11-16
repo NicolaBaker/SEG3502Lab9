@@ -1,4 +1,4 @@
-# Laboratoire 6 - Messagerie & Services Web REST
+# Laboratoire 9
 
 - Groupe 23
 - Nicola Baker, 300360908
@@ -6,16 +6,12 @@
 
 ## Les étapes nécessaires pour installer et exécuter le projet
 
-Étape 1 : Installer Java JDK 17, Git et Visual Studio Code (VS Code).
-Étape 2 : Cloner le projet en utilisant la commande suivante dans le terminal :
-git clone https://github.com/maximomalo/SEG3502Lab6.git
-Étape 3 : Ouvrir le dossier du projet SEG3502Lab6 dans VS Code.
-Étape 4 : Ouvrir un terminal dans le dossier du projet. Les dépendances seront téléchargées
-automatiquement lors de l'exécution.
-Étape 5 : Démarrer le serveur avec la commande :
-.\gradlew.bat bootRun
-Étape 6 : Une fois le serveur démarré, ouvrir le navigateur et accéder à l'adresse suivante :
-http://localhost:8080/swagger-ui.html
-Étape 7 : Sélectionner une opération (addition, soustraction, multiplication ou division), cliquer sur « Try
-it out », entrer deux nombres et cliquer sur « Execute » pour obtenir le résultat.
-Étape 8 : Pour arrêter le serveur, retourner dans le terminal et appuyer sur Ctrl + C.
+Cloner le projet dans le terminal : git clone https://github.com/NicolaBaker/SEG3502Lab9.git 
+Ouvrir un terminal PowerShell à la racine du projet SEG3502Lab9.
+Démarrer l’application avec la commande : .\gradlew.bat bootRun
+Ouvrir un deuxième terminal et tester sans identifiants : curl.exe -i http://localhost:8080/calculator/add/5/3   
+Tester avec user1 : curl.exe -i -u user1:pass1 http://localhost:8080/calculator/add/5/3
+Tester avec user2 : curl.exe -i -u user2:pass2 http://localhost:8080/calculator/add/5/3 
+...
+Pour arrêter le serveur, faire Ctrl + C dans le terminal où l’application fonctionne.
+
